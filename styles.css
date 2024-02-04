@@ -8,11 +8,15 @@ body{
     padding:0;
 }
 
+.wrapper {
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header{
-    width: vw;
     padding:1rem;
     background-color: hsl(var(--base-color), 50%);
-
 }
 
 h1{
@@ -21,13 +25,14 @@ h1{
 }
 
 footer {
-    position:fixed;
-    bottom:0;
+    margin-top:auto;
     text-align:center;
     width: 100%;
 
     border-top: solid;
     border-width: 1px;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
 }
+
