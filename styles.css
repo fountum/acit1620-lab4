@@ -1,5 +1,5 @@
 :root{
-    --base-color: 45, 100%
+    --base-color: 110, 45%
 }
 
 html,
@@ -68,6 +68,20 @@ li:hover{
     transition: bottom 450ms,
     color 450ms,
     background-color 450ms;
+}
+
+section{
+    max-width: 85vw;
+    align-self: center;
+    background-color: white;
+}
+
+h2{
+    color: hsl(var(--base-color), 30%);
+}
+
+h2 p{
+    color:black;
 }
 
 footer {
