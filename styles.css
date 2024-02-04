@@ -34,24 +34,40 @@ nav{
 
 ul{
     display:flex;
-
+    margin:0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    align-items:end;
 }
 
 li{
+    position:relative;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top:.5rem;
     padding-bottom:.5rem;
     margin-right: 0.75rem;
     list-style: none;
-    border:solid; /* remove later */
-    border-color: white;
     border-radius: 4px;
-
-    color: hsl(var(--base-color), 35%);
-
+    max-height: 32px;
+    
     box-shadow: 0px 1px 2px 1px grey  ;
 
+    bottom:0px;
+    color: hsl(var(--base-color), 35%);
+    background-color: white;
+    transition: bottom 300ms,
+    color 300ms,
+    background-color 300ms;
+}
+
+li:hover{
+    bottom:5px;
+    color: white;
+    background-color: hsl(var(--base-color), 45%);
+    transition: bottom 450ms,
+    color 450ms,
+    background-color 450ms;
 }
 
 footer {
